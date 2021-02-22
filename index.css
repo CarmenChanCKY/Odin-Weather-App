@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+@media only screen and (max-width: 600px) {
+  .temperature-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 600.1px) {
+  .temperature-info {
+    width: 350px;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  background-color: #58b2dc;
+  min-height: 400px;
+  min-width: 250px;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-area,
+.error-area {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 15px;
+}
+
+.search-bar-width {
+  width: 700px;
+}
+
+#search-temperature-bar {
+  width: 100%;
+  border: none;
+  padding: 0 15px 0 15px;
+  color: white;
+  outline: none;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+#search-temperature-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#search-temperature-button:focus {
+  outline: none;
+}
+
+#error-message {
+  color: darkred;
+  display: none;
+}
+
+.temperature-area {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 400px;
+}
+
+#temperature-location {
+  font-size: 26px;
+}
+
+#temperature-temp {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+#temperature-status {
+  font-size: 22px;
+}
+
+#temperature-min,
+#temperature-max {
+  font-size: 32px;
+}
+
+.padding {
+  padding-top: 10px;
+}
+
+#temperature-icon {
+  height: 200px;
+  width: 200px;
+}

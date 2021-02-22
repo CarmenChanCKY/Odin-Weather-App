@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <script src="./index.js"></script>
+</head>
+
+<body onload="loadWeatherData('Hong Kong')">
+    <div class="container">
+
+        <div class="search-area">
+            <div class="search-bar search-bar-width">
+                <input type="text" name="search-temperature-bar" id="search-temperature-bar"
+                    placeholder="Input a city name...">
+                <button name="search-temperature-button" id="search-temperature-button" onclick="getLocation()"><i
+                        class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="error-area">
+            <div id="error-message" class="search-bar-width">
+                123
+            </div>
+        </div>
+        <div class="temperature-area">
+            <div class="temperature-info">
+
+                <div class="temperature-location-area">
+                    <p id="temperature-location"></p>
+                </div>
+                <div class="temperature-temp-area">
+                    <p id="temperature-temp"></p>
+                </div>
+                <div class="temperature-status-area">
+                    <p id="temperature-status"></p>
+                </div>
+                <div class="temperature-min-area padding">
+                    <p id="temperature-min"></p>
+                </div>
+                <div class="temperature-max-area padding">
+                    <p id="temperature-max"></p>
+                </div>
+            </div>
+            <div class="temperature-icon-area">
+                <img id="temperature-icon">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
